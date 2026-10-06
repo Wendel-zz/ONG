@@ -16,9 +16,16 @@
 
     <h1>ONG Esperança</h1>
 
-    <button id="botaoMenu" onclick="alternarMenu()">☰</button>
+    <button
+        id="botaoMenu"
+        onclick="alternarMenu()"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+        aria-controls="menu">
+        ☰
+    </button>
 
-    <nav id="menu">
+    <nav id="menu" aria-label="Menu principal">
 
         <a href="#" onclick="navegar('inicio')">
             Início
@@ -42,18 +49,27 @@
 </main>
 
 
-<div id="toast" class="toast">
+<div
+    id="toast"
+    class="toast"
+    role="status"
+    aria-live="polite">
 
     Ação realizada com sucesso!
 
 </div>
 
 
-<div id="modal" class="modal">
+<div
+    id="modal"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="tituloModal">
 
     <div class="modal-conteudo">
 
-        <h2>ONG Esperança</h2>
+        <h2 id="tituloModal">ONG Esperança</h2>
 
         <p>
             Obrigado pelo interesse em participar
