@@ -12,91 +12,100 @@
 
 <body>
 
-<a class="link-pular-conteudo" href="#app">
-    Pular para o conteúdo principal
-</a>
+    <a class="link-pular-conteudo" href="#app">
+        Pular para o conteúdo principal
+    </a>
 
-<header>
+    <header>
 
-    <h1>ONG Esperança</h1>
+        <h1>ONG Esperança</h1>
 
-    <button
-        id="botaoMenu"
-        onclick="alternarMenu()"
-        aria-label="Abrir menu de navegação"
-        aria-expanded="false"
-        aria-controls="menu">
-        ☰
-    </button>
-
-    <nav id="menu" aria-label="Menu principal">
-
-        <a href="#" onclick="navegar('inicio')">
-            Início
-        </a>
-
-        <a href="#" onclick="navegar('projetos')">
-            Projetos
-        </a>
-
-        <a href="#" onclick="navegar('cadastro')">
-            Cadastro
-        </a>
-
-    </nav>
-
-</header>
-
-
-<main id="app" tabindex="-1">
-
-</main>
-
-
-<div
-    id="toast"
-    class="toast"
-    role="status"
-    aria-live="polite">
-
-    Ação realizada com sucesso!
-
-</div>
-
-
-<div
-    id="modal"
-    class="modal"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="tituloModal">
-
-    <div class="modal-conteudo">
-
-        <h2 id="tituloModal">ONG Esperança</h2>
-
-        <p>
-            Obrigado pelo interesse em participar
-            das nossas ações sociais.
-        </p>
-
-        <button onclick="fecharModal()">
-            Fechar
+        <button
+            id="botaoContraste"
+            type="button"
+            onclick="alternarContraste()"
+            aria-pressed="false"
+            aria-label="Ativar modo noturno">
+            Modo noturno
         </button>
+
+        <button
+            id="botaoMenu"
+            type="button"
+            onclick="alternarMenu()"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false"
+            aria-controls="menu">
+            ☰
+        </button>
+
+        <nav id="menu" aria-label="Menu principal">
+
+            <a href="#" onclick="navegar('inicio')">
+                Início
+            </a>
+
+            <a href="#" onclick="navegar('projetos')">
+                Projetos
+            </a>
+
+            <a href="#" onclick="navegar('cadastro')">
+                Cadastro
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main id="app" tabindex="-1">
+    </main>
+
+    <div
+        id="toast"
+        class="toast"
+        role="status"
+        aria-live="polite">
+        Ação realizada com sucesso!
+    </div>
+
+    <div
+        id="modal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="tituloModal">
+
+        <div class="modal-conteudo">
+
+            <h2 id="tituloModal">
+                ONG Esperança
+            </h2>
+
+            <p>
+                Obrigado pelo interesse em participar
+                das nossas ações sociais.
+            </p>
+
+            <button
+                type="button"
+                onclick="fecharModal()">
+                Fechar
+            </button>
+
+        </div>
 
     </div>
 
-</div>
+    <footer>
 
+        <p>ONG Esperança - 2026</p>
 
-<footer>
+    </footer>
 
-    <p>ONG Esperança - 2026</p>
-
-</footer>
-
-
-<script type="module" src="../js/script.js"></script>
+    <script
+        type="module"
+        src="../js/script.js">
+    </script>
 
 </body>
 
