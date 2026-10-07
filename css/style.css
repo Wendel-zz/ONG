@@ -425,3 +425,75 @@ footer {
         display: flex !important;
     }
 } 
+
+/* MODO DE ALTO CONTRASTE */
+
+body.alto-contraste {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+body.alto-contraste header,
+body.alto-contraste footer {
+    background: #000000;
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+body.alto-contraste nav a {
+    color: #FFFFFF;
+}
+
+body.alto-contraste .card,
+body.alto-contraste fieldset,
+body.alto-contraste .modal-conteudo {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste h2,
+body.alto-contraste legend {
+    color: #FFFFFF;
+}
+
+body.alto-contraste .alerta {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste .badge,
+body.alto-contraste button {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste input,
+body.alto-contraste select {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste .toast {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste .link-pular-conteudo {
+    background: #FFFFFF;
+    color: #000000;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste button:focus,
+body.alto-contraste nav a:focus,
+body.alto-contraste input:focus,
+body.alto-contraste select:focus,
+body.alto-contraste .link-pular-conteudo:focus {
+    outline: 3px solid #FFFF00;
+    outline-offset: 3px;
+}

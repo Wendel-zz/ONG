@@ -8,7 +8,8 @@ import {
     mostrarToast,
     abrirModal,
     fecharModal,
-    alternarMenu
+    alternarMenu,
+    alternarContraste
 } from "./interface.js";
 
 
@@ -103,6 +104,7 @@ window.navegar = navegar;
 window.abrirModal = abrirModal;
 window.fecharModal = fecharModal;
 window.alternarMenu = alternarMenu;
+window.alternarContraste = alternarContraste;
 window.mostrarToast = mostrarToast;
 
 
