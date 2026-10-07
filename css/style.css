@@ -1,6 +1,6 @@
 :root {
     --verde: #2E7D32;
-    --verde-claro: #66BB6A;
+    --verde-claro: #2E7D32;
     --amarelo: #F9A825;
     --branco: #FFFFFF;
     --cinza: #F5F5F5;
@@ -18,6 +18,31 @@ body {
     font-family: Arial, sans-serif;
     background: var(--cinza);
     color: var(--texto);
+}
+
+/* LINK PARA PULAR DIRETAMENTE AO CONTEÚDO */
+
+.link-pular-conteudo {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+
+    padding: 10px 15px;
+
+    background: var(--branco);
+    color: var(--verde);
+
+    border: 2px solid var(--verde);
+    border-radius: 6px;
+
+    z-index: 1000;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-pular-conteudo:focus {
+    top: 10px;
 }
 
 /* CABEÇALHO */
@@ -51,6 +76,11 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+nav a:focus {
+    outline: 3px solid var(--amarelo);
+    outline-offset: 3px;
 }
 
 /* CONTEÚDO */
@@ -129,6 +159,7 @@ button:hover {
 
 button:focus {
     outline: 3px solid var(--amarelo);
+    outline-offset: 2px;
 }
 
 button:active {
@@ -169,7 +200,8 @@ select {
 
 input:focus,
 select:focus {
-    outline: 2px solid var(--verde-claro);
+    outline: 3px solid var(--amarelo);
+    outline-offset: 1px;
 }
 
 input:valid {
@@ -392,4 +424,76 @@ footer {
     nav.menu-aberto {
         display: flex !important;
     }
+} 
+
+/* MODO DE ALTO CONTRASTE */
+
+body.alto-contraste {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+body.alto-contraste header,
+body.alto-contraste footer {
+    background: #000000;
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+body.alto-contraste nav a {
+    color: #FFFFFF;
+}
+
+body.alto-contraste .card,
+body.alto-contraste fieldset,
+body.alto-contraste .modal-conteudo {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste h2,
+body.alto-contraste legend {
+    color: #FFFFFF;
+}
+
+body.alto-contraste .alerta {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste .badge,
+body.alto-contraste button {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste input,
+body.alto-contraste select {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste .toast {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste .link-pular-conteudo {
+    background: #FFFFFF;
+    color: #000000;
+    border: 2px solid #FFFFFF;
+}
+
+body.alto-contraste button:focus,
+body.alto-contraste nav a:focus,
+body.alto-contraste input:focus,
+body.alto-contraste select:focus,
+body.alto-contraste .link-pular-conteudo:focus {
+    outline: 3px solid #FFFF00;
+    outline-offset: 3px;
 }
